@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MissionAssign</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        //在页面加载完成后
+        // $(function () {
+        //     $.getJSON("/json/temple_1.json",function (data) {
+        //         // var AITask_No = data[AITask_No];
+        //         // var AIBoard_No = data[AIBoard_No];
+        //         // var Steam_Input = data[Stream_Input];
+        //         $.post("/service/video.SetAIBoardTask",
+        //             data,function(data){
+        //                 // alert(data);
+        //                 console.log("json数据发送成功")
+        //             });
+        //     });
+        // });
+
+        function fun() {
+            $.getJSON("/json/temple_1.json",function (data) {
+                $.post("/service/video.SetAIBoardTask", data, function (data) {
+                    alert(data);
+                }, "json");
+            };
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="button" value="发送异步请求" onclick="fun();">
+    <input type="text" id="jsonType" placeholder="获取json数据">
+
+
+    <!--<form>-->
+
+        <!--<input type="text" id="username" name="username" placeholder="请输入用户名">-->
+        <!--<span id="s_username"></span>-->
+        <!--<br>-->
+        <!--<input type="password" name="password" placeholder="请输入密码"><br>-->
+        <!--<input type="submit" value="注册"><br>-->
+
+    <!--</form>-->
+
+</body>
+</html>

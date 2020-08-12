@@ -1,0 +1,34 @@
+{
+    "AITask_No":"asdr343-srqeef223-qerq84",
+    "AIBoard_No":"1234123412332",
+    "Stream_Input":{
+        "Input_Source":"rtsp://192.168.1.110/live4",
+        "Input_Scale":{
+            "width":"1920",
+            "height":"1080",
+            "bitrate":"4096",
+            "iframe":"50",
+            "framerate":"25"
+        }
+    },
+    "IS_AIPushStream":"1",
+    "IS_AIQuality":"0",
+    "IS_Intelligent":"0",
+    "Stream_Output_Low":{
+        "Output_Source":"rtmp://192.168.1.103/live/room84",
+        "Output_Scale":{
+            "width":"352",
+            "height":"288",
+            "bitrate":"32",
+            "iframe":"50",
+            "framerate":"25"
+        }
+    },
+    "QualityAnalysis_Task":{
+        "update":"new_mission"
+    },
+    "IntelligentAnalysis_Task":{
+        "Item_Active":"00000000",
+        "Interval":"5"
+    }
+}
