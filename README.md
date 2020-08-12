@@ -4,7 +4,7 @@ main from byte to get pic from http server, there are two main mission. <br>
 2, as Client receive the mission deal from xavier. <br>
 
 ## For xavier, there are three task to deal with.
-1, Video stream push, from rtsp(1920*1280/1280*720) to CIF(352*288), up to 20 ways. <br>
+1, Video stream push, from rtsp((1920*1280)/(1280*720)) to CIF(352*288), up to 20 ways. <br>
 2, Quality detect. there are 8 ways to find the quality problem. <br>
 3, AI detect, to detect AI event from the scene. <br>
 
